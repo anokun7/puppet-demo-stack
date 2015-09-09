@@ -1,0 +1,95 @@
+[0;36mDebug: Runtime environment: puppet_version=3.7.4 (Puppet Enterprise 3.7.2), ruby_version=1.9.3, run_mode=user, default_encoding=UTF-8[0m
+[0;36mDebug: Loading external facts from /var/opt/lib/pe-puppet/facts.d[0m
+[0;32mInfo: Loading facts[0m
+[0;36mDebug: Loading facts from /etc/puppetlabs/puppet/modules/stdlib/lib/facter/root_home.rb[0m
+[0;36mDebug: Loading facts from /etc/puppetlabs/puppet/modules/stdlib/lib/facter/puppet_vardir.rb[0m
+[0;36mDebug: Loading facts from /etc/puppetlabs/puppet/modules/stdlib/lib/facter/pe_version.rb[0m
+[0;36mDebug: Loading facts from /etc/puppetlabs/puppet/modules/stdlib/lib/facter/facter_dot_d.rb[0m
+[0;32mInfo: Loading facts[0m
+[0;36mDebug: Loading facts from /etc/puppetlabs/puppet/modules/concat/lib/facter/concat_basedir.rb[0m
+[0;32mInfo: Loading facts[0m
+[0;36mDebug: Loading facts from /var/opt/lib/pe-puppet/lib/facter/staging_http_get.rb[0m
+[0;36mDebug: Loading facts from /var/opt/lib/pe-puppet/lib/facter/root_home.rb[0m
+[0;36mDebug: Loading facts from /var/opt/lib/pe-puppet/lib/facter/concat_basedir.rb[0m
+[0;36mDebug: Loading facts from /var/opt/lib/pe-puppet/lib/facter/oracle_database_homes.rb[0m
+[0;36mDebug: Loading facts from /var/opt/lib/pe-puppet/lib/facter/puppet_vardir.rb[0m
+[0;36mDebug: Loading facts from /var/opt/lib/pe-puppet/lib/facter/custom_auth_conf.rb[0m
+[0;36mDebug: Loading facts from /var/opt/lib/pe-puppet/lib/facter/pe_concat_basedir.rb[0m
+[0;36mDebug: Loading facts from /var/opt/lib/pe-puppet/lib/facter/pe_build.rb[0m
+[0;36mDebug: Loading facts from /var/opt/lib/pe-puppet/lib/facter/pe_version.rb[0m
+[0;36mDebug: Loading facts from /var/opt/lib/pe-puppet/lib/facter/windows.rb[0m
+[0;36mDebug: Loading facts from /var/opt/lib/pe-puppet/lib/facter/facter_dot_d.rb[0m
+[0;36mDebug: Loading facts from /var/opt/lib/pe-puppet/lib/facter/platform_tag.rb[0m
+[0;36mDebug: oradb opatch is[0m
+[mNotice: Scope(Class[main]): centos65a.pdx.puppetlabs.demo[0m
+[mNotice: Compiled catalog for centos65a.pdx.puppetlabs.demo in environment production in 0.01 seconds[0m
+[0;36mDebug: Creating default schedules[0m
+[0;36mDebug: Using settings: adding file resource 'confdir': 'File[/etc/puppetlabs/puppet]{:path=>"/etc/puppetlabs/puppet", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+[0;36mDebug: Puppet::Type::User::ProviderPw: file pw does not exist[0m
+[0;36mDebug: Puppet::Type::User::ProviderDirectoryservice: file /usr/bin/dsimport does not exist[0m
+[0;36mDebug: Puppet::Type::User::ProviderLdap: true value when expecting false[0m
+[0;36mDebug: Puppet::Type::User::ProviderUser_role_add: file roleadd does not exist[0m
+[0;36mDebug: Puppet::Type::Group::ProviderPw: file pw does not exist[0m
+[0;36mDebug: Puppet::Type::Group::ProviderDirectoryservice: file /usr/bin/dscl does not exist[0m
+[0;36mDebug: Puppet::Type::Group::ProviderLdap: true value when expecting false[0m
+[0;36mDebug: Using settings: adding file resource 'vardir': 'File[/var/opt/lib/pe-puppet]{:path=>"/var/opt/lib/pe-puppet", :owner=>"pe-puppet", :group=>"pe-puppet", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+[0;36mDebug: Using settings: adding file resource 'logdir': 'File[/var/log/pe-puppet]{:path=>"/var/log/pe-puppet", :mode=>"750", :owner=>"pe-puppet", :group=>"pe-puppet", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+[0;36mDebug: Using settings: adding file resource 'statedir': 'File[/var/opt/lib/pe-puppet/state]{:path=>"/var/opt/lib/pe-puppet/state", :mode=>"1755", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+[0;36mDebug: Using settings: adding file resource 'rundir': 'File[/var/run/pe-puppet]{:path=>"/var/run/pe-puppet", :mode=>"755", :owner=>"pe-puppet", :group=>"pe-puppet", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+[0;36mDebug: Using settings: adding file resource 'libdir': 'File[/var/opt/lib/pe-puppet/lib]{:path=>"/var/opt/lib/pe-puppet/lib", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+[0;36mDebug: Using settings: adding file resource 'hiera_config': 'File[/etc/puppetlabs/puppet/hiera.yaml]{:path=>"/etc/puppetlabs/puppet/hiera.yaml", :ensure=>:file, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+[0;36mDebug: Using settings: adding file resource 'certdir': 'File[/etc/puppetlabs/puppet/ssl/certs]{:path=>"/etc/puppetlabs/puppet/ssl/certs", :mode=>"755", :owner=>"pe-puppet", :group=>"pe-puppet", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+[0;36mDebug: Using settings: adding file resource 'ssldir': 'File[/etc/puppetlabs/puppet/ssl]{:path=>"/etc/puppetlabs/puppet/ssl", :mode=>"771", :owner=>"pe-puppet", :group=>"pe-puppet", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+[0;36mDebug: Using settings: adding file resource 'publickeydir': 'File[/etc/puppetlabs/puppet/ssl/public_keys]{:path=>"/etc/puppetlabs/puppet/ssl/public_keys", :mode=>"755", :owner=>"pe-puppet", :group=>"pe-puppet", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+[0;36mDebug: Using settings: adding file resource 'requestdir': 'File[/etc/puppetlabs/puppet/ssl/certificate_requests]{:path=>"/etc/puppetlabs/puppet/ssl/certificate_requests", :mode=>"755", :owner=>"pe-puppet", :group=>"pe-puppet", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+[0;36mDebug: Using settings: adding file resource 'privatekeydir': 'File[/etc/puppetlabs/puppet/ssl/private_keys]{:path=>"/etc/puppetlabs/puppet/ssl/private_keys", :mode=>"750", :owner=>"pe-puppet", :group=>"pe-puppet", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+[0;36mDebug: Using settings: adding file resource 'privatedir': 'File[/etc/puppetlabs/puppet/ssl/private]{:path=>"/etc/puppetlabs/puppet/ssl/private", :mode=>"750", :owner=>"pe-puppet", :group=>"pe-puppet", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+[0;36mDebug: Using settings: adding file resource 'hostcert': 'File[/etc/puppetlabs/puppet/ssl/certs/centos65a.pdx.puppetlabs.demo.pem]{:path=>"/etc/puppetlabs/puppet/ssl/certs/centos65a.pdx.puppetlabs.demo.pem", :mode=>"644", :owner=>"pe-puppet", :group=>"pe-puppet", :ensure=>:file, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+[0;36mDebug: Using settings: adding file resource 'hostprivkey': 'File[/etc/puppetlabs/puppet/ssl/private_keys/centos65a.pdx.puppetlabs.demo.pem]{:path=>"/etc/puppetlabs/puppet/ssl/private_keys/centos65a.pdx.puppetlabs.demo.pem", :mode=>"640", :owner=>"pe-puppet", :group=>"pe-puppet", :ensure=>:file, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+[0;36mDebug: Using settings: adding file resource 'hostpubkey': 'File[/etc/puppetlabs/puppet/ssl/public_keys/centos65a.pdx.puppetlabs.demo.pem]{:path=>"/etc/puppetlabs/puppet/ssl/public_keys/centos65a.pdx.puppetlabs.demo.pem", :mode=>"644", :owner=>"pe-puppet", :group=>"pe-puppet", :ensure=>:file, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+[0;36mDebug: Using settings: adding file resource 'localcacert': 'File[/etc/puppetlabs/puppet/ssl/certs/ca.pem]{:path=>"/etc/puppetlabs/puppet/ssl/certs/ca.pem", :mode=>"644", :owner=>"pe-puppet", :group=>"pe-puppet", :ensure=>:file, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+[0;36mDebug: Using settings: adding file resource 'hostcrl': 'File[/etc/puppetlabs/puppet/ssl/crl.pem]{:path=>"/etc/puppetlabs/puppet/ssl/crl.pem", :mode=>"644", :owner=>"pe-puppet", :group=>"pe-puppet", :ensure=>:file, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+[0;36mDebug: Using settings: adding file resource 'statefile': 'File[/var/opt/lib/pe-puppet/state/state.yaml]{:path=>"/var/opt/lib/pe-puppet/state/state.yaml", :mode=>"660", :ensure=>:file, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+[0;36mDebug: Using settings: adding file resource 'clientyamldir': 'File[/var/opt/lib/pe-puppet/client_yaml]{:path=>"/var/opt/lib/pe-puppet/client_yaml", :mode=>"750", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+[0;36mDebug: Using settings: adding file resource 'client_datadir': 'File[/var/opt/lib/pe-puppet/client_data]{:path=>"/var/opt/lib/pe-puppet/client_data", :mode=>"750", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+[0;36mDebug: Using settings: adding file resource 'resourcefile': 'File[/var/opt/lib/pe-puppet/state/resources.txt]{:path=>"/var/opt/lib/pe-puppet/state/resources.txt", :mode=>"640", :owner=>"root", :ensure=>:file, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+[0;36mDebug: Using settings: adding file resource 'clientbucketdir': 'File[/var/opt/lib/pe-puppet/clientbucket]{:path=>"/var/opt/lib/pe-puppet/clientbucket", :mode=>"750", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+[0;36mDebug: Using settings: adding file resource 'lastrunfile': 'File[/var/opt/lib/pe-puppet/state/last_run_summary.yaml]{:path=>"/var/opt/lib/pe-puppet/state/last_run_summary.yaml", :mode=>"644", :ensure=>:file, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+[0;36mDebug: Using settings: adding file resource 'lastrunreport': 'File[/var/opt/lib/pe-puppet/state/last_run_report.yaml]{:path=>"/var/opt/lib/pe-puppet/state/last_run_report.yaml", :mode=>"640", :ensure=>:file, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+[0;36mDebug: Using settings: adding file resource 'graphdir': 'File[/var/opt/lib/pe-puppet/state/graphs]{:path=>"/var/opt/lib/pe-puppet/state/graphs", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+[0;36mDebug: Using settings: adding file resource 'pluginfactdest': 'File[/var/opt/lib/pe-puppet/facts.d]{:path=>"/var/opt/lib/pe-puppet/facts.d", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+[0;36mDebug: /File[/var/opt/lib/pe-puppet/state]: Autorequiring File[/var/opt/lib/pe-puppet][0m
+[0;36mDebug: /File[/var/opt/lib/pe-puppet/lib]: Autorequiring File[/var/opt/lib/pe-puppet][0m
+[0;36mDebug: /File[/etc/puppetlabs/puppet/hiera.yaml]: Autorequiring File[/etc/puppetlabs/puppet][0m
+[0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/certs]: Autorequiring File[/etc/puppetlabs/puppet/ssl][0m
+[0;36mDebug: /File[/etc/puppetlabs/puppet/ssl]: Autorequiring File[/etc/puppetlabs/puppet][0m
+[0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/public_keys]: Autorequiring File[/etc/puppetlabs/puppet/ssl][0m
+[0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/certificate_requests]: Autorequiring File[/etc/puppetlabs/puppet/ssl][0m
+[0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/private_keys]: Autorequiring File[/etc/puppetlabs/puppet/ssl][0m
+[0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/private]: Autorequiring File[/etc/puppetlabs/puppet/ssl][0m
+[0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/certs/centos65a.pdx.puppetlabs.demo.pem]: Autorequiring File[/etc/puppetlabs/puppet/ssl/certs][0m
+[0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/private_keys/centos65a.pdx.puppetlabs.demo.pem]: Autorequiring File[/etc/puppetlabs/puppet/ssl/private_keys][0m
+[0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/public_keys/centos65a.pdx.puppetlabs.demo.pem]: Autorequiring File[/etc/puppetlabs/puppet/ssl/public_keys][0m
+[0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/certs/ca.pem]: Autorequiring File[/etc/puppetlabs/puppet/ssl/certs][0m
+[0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/crl.pem]: Autorequiring File[/etc/puppetlabs/puppet/ssl][0m
+[0;36mDebug: /File[/var/opt/lib/pe-puppet/state/state.yaml]: Autorequiring File[/var/opt/lib/pe-puppet/state][0m
+[0;36mDebug: /File[/var/opt/lib/pe-puppet/client_yaml]: Autorequiring File[/var/opt/lib/pe-puppet][0m
+[0;36mDebug: /File[/var/opt/lib/pe-puppet/client_data]: Autorequiring File[/var/opt/lib/pe-puppet][0m
+[0;36mDebug: /File[/var/opt/lib/pe-puppet/state/resources.txt]: Autorequiring File[/var/opt/lib/pe-puppet/state][0m
+[0;36mDebug: /File[/var/opt/lib/pe-puppet/clientbucket]: Autorequiring File[/var/opt/lib/pe-puppet][0m
+[0;36mDebug: /File[/var/opt/lib/pe-puppet/state/last_run_summary.yaml]: Autorequiring File[/var/opt/lib/pe-puppet/state][0m
+[0;36mDebug: /File[/var/opt/lib/pe-puppet/state/last_run_report.yaml]: Autorequiring File[/var/opt/lib/pe-puppet/state][0m
+[0;36mDebug: /File[/var/opt/lib/pe-puppet/state/graphs]: Autorequiring File[/var/opt/lib/pe-puppet/state][0m
+[0;36mDebug: /File[/var/opt/lib/pe-puppet/facts.d]: Autorequiring File[/var/opt/lib/pe-puppet][0m
+[0;36mDebug: Finishing transaction 24332280[0m
+[0;36mDebug: Loaded state in 0.03 seconds[0m
+[0;36mDebug: Loaded state in 0.01 seconds[0m
+[0;32mInfo: Applying configuration version '1426207798'[0m
+[0;36mDebug: Finishing transaction 24638720[0m
+[0;36mDebug: Storing state[0m
+[0;36mDebug: Stored state in 0.04 seconds[0m
+[mNotice: Finished catalog run in 0.06 seconds[0m
+[0;36mDebug: Using settings: adding file resource 'rrddir': 'File[/var/opt/lib/pe-puppet/rrd]{:path=>"/var/opt/lib/pe-puppet/rrd", :mode=>"750", :owner=>"pe-puppet", :group=>"pe-puppet", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+[0;36mDebug: Finishing transaction 25175580[0m
+[0;36mDebug: Received report to process from centos65a.pdx.puppetlabs.demo[0m
+[0;36mDebug: Processing report from centos65a.pdx.puppetlabs.demo with processor Puppet::Reports::Store[0m

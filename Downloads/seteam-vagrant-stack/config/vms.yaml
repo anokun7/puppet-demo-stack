@@ -1,0 +1,108 @@
+---
+vms:
+  - name: "master.inf.puppetlabs.demo"
+    box:  "puppetlabs/centos-6.5-64-nocm"
+    roles: [ "master" ]
+
+  - name: "centos65a.pdx.puppetlabs.demo"
+    box: "puppetlabs/centos-6.5-64-nocm"
+    roles: [ "posix_agent" ]
+
+  - name: "centos65b.syd.puppetlabs.demo"
+    box: "puppetlabs/centos-6.5-64-nocm"
+    roles: [ "posix_agent" ]
+
+  - name: "centos70a.pdx.puppetlabs.demo"
+    box: "puppetlabs/centos-7.0-64-nocm"
+    roles: [ "posix_agent" ]
+#
+#  - name: "centos70b.syd.puppetlabs.demo"
+#    box: "puppetlabs/centos-7.0-64-nocm"
+#    roles: [ "posix_agent" ]
+#
+#  - name: "ubuntu1404a.pdx.puppetlabs.demo"
+#    box: "puppetlabs/ubuntu-14.04-64-nocm"
+#    roles: [ "posix_agent" ]
+#
+#  - name: "ubuntu1404b.syd.puppetlabs.demo"
+#    box: "puppetlabs/ubuntu-14.04-64-nocm"
+#    roles: [ "posix_agent" ]
+#
+  #- name: "solaris11a"
+  #  box: 'solaris-11'
+  #  roles: [ "posix_agent" ]
+
+# Install the windows puppet agent using a PowerShell script.
+#
+# NOTE: Powershell doesn't seem to properly accept arguments from the
+#       vagrant shell provisioner as an array, so I pass them in as a single,
+#       space-delimited string instead.
+
+  #- name: "server2008r2a"
+  #  box: "windows-server-2008-r2-x64-v2"
+  #  guest: windows
+  #  communicator: winrm
+  #  private_networks:
+  #    - {ip: '0.0.0.0', auto_network: true}
+  #  synced_folders:
+  #    - host_path:  '.files'
+  #      guest_path: 'c:/seteam-files'
+  #  provisioners:
+  #    - {type: hosts}
+  #    - type: shell
+  #      inline: 'Set-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\System" -Name "EnableLUA" -Value "0"'
+  #    - {type: reload}
+  #    - type: shell
+  #      path: "scripts/install_agent.ps1"
+  #      args: "server2008r2a.pdx.puppetlabs.demo 3.7.1"
+
+  #- name: "server2008r2b"
+  #  box: "windows-server-2008-r2-x64-v2"
+  #  guest: windows
+  #  communicator: winrm
+  #  private_networks:
+  #    - {ip: '0.0.0.0', auto_network: true}
+  #  synced_folders:
+  #    - host_path:  '.files'
+  #      guest_path: 'c:/seteam-files'
+  #  provisioners:
+  #    - {type: hosts}
+  #    - type: shell
+  #      inline: 'Set-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\System" -Name "EnableLUA" -Value "0"'
+  #    - {type: reload}
+  #    - type: shell 
+  #      path: "scripts/install_agent.ps1"
+  #      args: "server2008r2b.syd.puppetlabs.demo 3.7.1"
+
+  #- name: "server2012r2a"
+  #  box: "windows-server-2012r2-v3"
+  #  guest: windows
+  #  communicator: winrm
+  #  private_networks:
+  #    - {ip: '0.0.0.0', auto_network: true}
+  #  synced_folders:
+  #    - host_path:  '.files'
+  #      guest_path: 'c:/seteam-files'
+  #  provisioners:
+  #    - {type: hosts}
+  #    - type: shell
+  #      inline: 'Set-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\System" -Name "EnableLUA" -Value "0"'
+  #    - {type: reload}
+  #    - type: shell 
+  #      path: "scripts/install_agent.ps1"
+  #      args: "server2012r2a.pdx.puppetlabs.demo 3.7.1"
+  #
+  #- name: "server2012r2b"
+  #  box: "windows-server-2012r2-v3"
+  #  guest: windows
+  #  communicator: winrm
+  #  private_networks:
+  #    - {ip: '0.0.0.0', auto_network: true}
+  #  provisioners:
+  #    - {type: hosts}
+  #    - type: shell
+  #      inline: 'Set-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\System" -Name "EnableLUA" -Value "0"'
+  #    - {type: reload}
+  #    - type: shell 
+  #      path: "scripts/install_agent.ps1"
+  #      args: "server2012r2b.syd.puppetlabs.demo 3.7.1"
